@@ -19,20 +19,11 @@ class MainActivity : AppCompatActivity() {
             Log.d("입력아이디", inputId)
             Log.d("입력비번",inputPw)
 
-            /* if (inputId == "admin"){
-                Log.d("입력ID 확인", "admin임")
+            if (inputId == "admin@admin.com" && inputPw == "qwer"){
+                Log.d("로그인 확인", "관리자 입니다.")
             }
-            else if (inputId == "admin@admin.com"){
-                Log.d("입력ID 확인", "관리자 이메일")
-            }
-            else {
-                Log.d("입력ID 확인", "틀린아이디")
-            } */
-
-            when (inputId){
-                "admin" -> {Log.d("입력ID 확인", "admin임")}
-                "admin@admin.com" -> {Log.d("입력ID 확인", "관리자 이메일")}
-                else -> {Log.d("입력ID 확인", "틀린아이디")}
+            else{
+                Log.d("로그인 확인", "로그인에 실패했습니다.")
             }
 
 
